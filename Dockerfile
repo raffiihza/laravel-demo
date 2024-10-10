@@ -3,7 +3,7 @@ FROM raffiihza/docker-laravel
 WORKDIR /usr/app
 COPY . .
 
-RUN composer install && npm cache clean --force && npm install && npm run build
+RUN composer install && npm install && npm run build
 
 ### Please modify these commands as per your requirements and remove comment characters below
 ENV APP_ENV=local
